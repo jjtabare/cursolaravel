@@ -18,7 +18,11 @@ Route::get('/', function()
 
 Route::get('/prueba', function()
 {
-	return View::make('prueba');
+	return View::make('perfil.perfil')
+                ->with("nombre","jjtabare"); 
+              
 });
+
+
 
 Route::controller ('Personal','PersonalControl');
